@@ -174,23 +174,6 @@ This ensures correct representation across architectures
 
 ---
 
-### Centralized Byte Counting Without Globals
-
-The return value of `ft_printf` is tracked via a function-local static counter:
-
-```c
-static int count;
-```
-
-* Incremented on every character output
-* Reset deterministically at function exit
-* Encapsulated within a single translation unit
-* Avoids externally visible global state
-
-This design preserves correctness while maintaining clean symbol visibility.
-
----
-
 ## Usage
 
 The project is compiled as a static library using the provided `Makefile`.
