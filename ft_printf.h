@@ -6,7 +6,7 @@
 /*   By: htoe <htoe@student.42bangkok.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 23:47:08 by htoe              #+#    #+#             */
-/*   Updated: 2026/01/19 03:58:27 by htoe             ###   ########.fr       */
+/*   Updated: 2026/02/14 20:09:42 by htoe             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 # include <stddef.h>
 
 int		ft_printf(const char *str, ...);
-void	pf_putchar(char c);
-void	pf_putstr(char *str);
-void	pf_putpointer(void *ptr);
-void	pf_putnbr(long long num);
-void	pf_puthex(unsigned int num, int flag);
+void	pf_putchar(char c, int *byte);
+void	pf_putstr(char *str, int *byte);
+void	pf_putpointer(void *ptr, int *byte);
+void	pf_putnbr(long long num, int *byte);
+void	pf_puthex(unsigned int num, int flag, int *byte);
 
 #endif
